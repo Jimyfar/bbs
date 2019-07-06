@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>{% block title %}{% endblock %}</title>
+ <link href="//cdn.bootcss.com/prism/1.8.0/themes/prism.css" rel="stylesheet">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="description" content="CNode：Node.js专业中文社区">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io">
+  <!-- see http://smerity.com/articles/2013/where_did_all_the_http_referrers_go.html -->
+  <meta name="referrer" content="always">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link title="RSS" type="application/rss+xml" rel="alternate" href="https://cnodejs.org/rss">
+
+
+  <link rel="icon" href="../../images/划水.png" type="image/x-icon">
+
+
+  <!-- style -->
+  <link rel="stylesheet" href="/static/css/index.css" media="all">
+
+
+  <!-- scripts -->
+  <script async="" src="/static/js/setting.js"></script><script src="/static/js/index.js"></script>
+
+
+
+  <title>CNode：Node.js专业中文社区</title>
+
+  <meta content="_csrf" name="csrf-param">
+  <meta content="wVId0zEM-x2-jSgNUAcu7cd-HioUu5gjquKg" name="csrf-token">
+
+</head>
+<body>
+
+<!-- navbar -->
+<div class="navbar-parent">
+<div class='navbar'>
+  <div class='navbar-inner'>
+    <div class='container'>
+      <ul class='nav pull-left'>
+          <li><a style="padding: 5px;" class="user_avatar" href="{{ url_for('user.index', username=user.username) }}">
+      <img style="padding: -10px -10px" src="{{ user.image }}" title="{{ user.username }}">
+    </a></li>
+          <li><a href='/'>首页</a></li>
+          <li><a href='{{ url_for('topic.index') }}'>话题</a></li>
+          <li><a href="{{ url_for('setting.index') }}" target="">设置</a></li>
+        <li><a href="{{ url_for('mail.index', username=user.username) }}" target="">私信</a></li>
+        <li><a href='{{ url_for('user.index', username=user.username) }}'>个人信息</a></li>
+
+
+      </ul>
+      <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+{% block main %}
+{% endblock %}
+
+<div id="backtotop" style="top: 323px; right: 0px; display: none;">回到顶部</div>
+<div id="footer">
+  <div id="footer_main">
+    <div class="links">
+      <a class="dark" href="https://github.com/jimyfar/">源码地址</a>
+    </div>
+
+    <div class="col_fade">
+
+</div>
+
+
+  </div>
+</div>
+<div id="sidebar-mask"></div>
+<script>
+  // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script', "https://www.google-analytics.com/setting.js",'ga');
+
+  ga('create', 'UA-41753901-5', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>

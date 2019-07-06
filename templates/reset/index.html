@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>划水</title>
+<link href="../../static/css/login.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="../../images/划水.png" type="image/x-icon">
+    <meta name="keywords" content="App Loction Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"./>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfonts-->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+	<h1>重置密码</h1>
+		<div class="app-location">
+			<div class="location"><img src="../../images/游泳圈.png" class="img-responsive" alt="" /></div>
+			<form method="post" action="{{ url_for("reset.send") }}">
+				<input type="text" name="email" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
+				<div class="submit"><input type="submit" onclick="myFunction()" value="发送到邮箱" ></div>
+				<div class="clear"></div>
+				<div class="new">
+				</div>
+			</form>
+		</div>
+	<!--start-copyright-->
+   		<div class="copy-right">
+				<p>Copyright &copy; 2015.Company name All rights reserved.</p>
+		</div>
+	<!--//end-copyright-->
+</body>
+</html>

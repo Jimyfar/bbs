@@ -1,0 +1,6 @@
+.idea
+*.pyc
+secret.py
+database_secret.conf
+log.txt
+deploy.sh
