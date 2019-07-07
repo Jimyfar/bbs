@@ -26,7 +26,7 @@ bash deploy.sh
 
 ## 用户主页
 - 按时间降序查看创建过的话题和回复过的话题
-![ajax](https://github.com/Jimyfar/bbs/blob/master/images/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.gif)
+![ajax](https://github.com/Jimyfar/bbs/blob/master/images/%E5%88%9B%E5%BB%BA%E7%9A%84%E8%AF%9D%E9%A2%98.gif)
 
 ## 消息中心
 - 发送消息和接收消息
