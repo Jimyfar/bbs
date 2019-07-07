@@ -4,9 +4,9 @@
 
 ## 运行环境
 
-ubuntu 18.4
+Ubuntu Server 18.04.1 LTS 64位
 
-python 3.6
+Python 3.6
 
 ## 一键部署
 
